@@ -1,7 +1,7 @@
 import React from "react";
 
-const Pagination = () => {
+const MovieBoard = () => {
   return <div></div>;
 };
 
-export default Pagination;
+export default MovieBoard;

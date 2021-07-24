@@ -1,0 +1,17 @@
+.carousel {
+    height: 60vh!important;
+}
+.carousel-inner,.carousel-item, .trendingMovieImg  {
+    height:inherit;
+}
+.carousel-caption {
+    text-shadow: 1px 1px dimgray
+}
+.carousel-item {
+    background-color: black ;
+}
+.trendingMovieImg {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0)!important;
+}

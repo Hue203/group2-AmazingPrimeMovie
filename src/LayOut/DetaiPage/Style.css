@@ -19,7 +19,7 @@
   margin: 0;
   cursor: default;
   min-height: 100%;
-  background-color: #0f171e;
+  /* background-color: #0f171e; */
 }
 
 ._3KHiTg {
@@ -54,4 +54,41 @@
 .flex {
   display: flex;
   justify-content: space-between;
+}
+.button-color {
+  border: 1px solid #425265 !important;
+  background-color: #425265 !important;
+  border-radius: 3px;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  margin-right: 0;
+  height: 80px;
+  padding: 14px 20px;
+  text-align: center;
+}
+.button-color:active,
+.button-color:focus,
+.button-color:hover {
+  color: #ffff !important;
+  background-color: #566b84 !important;
+}
+.circle {
+  border-radius: 50% !important;
+  height: 40px;
+}
+._3Lykuc {
+  background: linear-gradient(90deg, #0f171e 10%, rgba(15, 23, 30, 0));
+}
+.center {
+  /* z-index: -1; */
+  mask-image: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    color-stop(0, rgba(0, 0, 0, 1)),
+    color-stop(0.35, rgba(0, 0, 0, 1)),
+    color-stop(0.5, rgba(0, 0, 0, 1)),
+    color-stop(0.65, rgba(0, 0, 0, 0)),
+    color-stop(1, rgba(0, 0, 0, 0))
+  );
 }

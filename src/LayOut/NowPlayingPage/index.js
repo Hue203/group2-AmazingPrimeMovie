@@ -6,6 +6,7 @@ import { Alert } from "react-bootstrap";
 import ClipLoader from "react-spinners/ClipLoader";
 import { css } from "@emotion/react";
 import "./style.css";
+import NowPlaying from "../../components/NowPlaying";
 
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -67,8 +68,18 @@ const NowPlayingPage = () => {
         />
       ) : (
         <div className="body">
-          <div className="text-playing">Playing Now</div>
-
+          <NowPlaying data={listMovie} imgLink={imgLink} />
+          <div>
+            {totalPage > 1 ? (
+              <PaginationBar
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                totalPage={totalPage}
+              />
+            ) : (
+              ""
+            )}
+          </div>
           <div className="movie-container" id="playingnow">
             {listMovie &&
               listMovie.map((movie) => (
@@ -100,17 +111,6 @@ const NowPlayingPage = () => {
                   </div>
                 </Link>
               ))}
-          </div>
-          <div>
-            {totalPage > 1 ? (
-              <PaginationBar
-                currentPage={currentPage}
-                setCurrentPage={setCurrentPage}
-                totalPage={totalPage}
-              />
-            ) : (
-              ""
-            )}
           </div>
         </div>
       )}

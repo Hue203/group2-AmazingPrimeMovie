@@ -53,3 +53,4 @@ const DetaiPage = () => {
     </>
   );
 };
+export default DetaiPage;

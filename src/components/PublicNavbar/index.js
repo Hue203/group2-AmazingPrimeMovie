@@ -1,12 +1,16 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo2.png";
+import "./style.css";
 const PublicNavBar = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" className="navbar">
         <Container>
-          <Navbar.Brand href="#home">Amazing Prime </Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            <img src={logo} alt="AmazingPrime" className="img-logo" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

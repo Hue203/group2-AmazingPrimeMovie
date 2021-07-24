@@ -7,7 +7,6 @@ import "./style.css";
 
 const NowPlaying = ({ data, imgLink }) => {
   const settings = {
-    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -15,6 +14,7 @@ const NowPlaying = ({ data, imgLink }) => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    dots: true,
   };
   return (
     <>

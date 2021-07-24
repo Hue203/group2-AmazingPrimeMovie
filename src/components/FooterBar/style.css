@@ -3,6 +3,7 @@
   text-align: center;
   padding: 100px 15px 50px;
   background-color: #100a0a;
+  max-height: 350px;
 }
 
 .footer img {

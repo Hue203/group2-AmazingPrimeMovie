@@ -79,16 +79,12 @@
 ._3Lykuc {
   background: linear-gradient(90deg, #0f171e 10%, rgba(15, 23, 30, 0));
 }
-.center {
-  /* z-index: -1; */
-  mask-image: -webkit-gradient(
-    linear,
-    right top,
-    left bottom,
-    color-stop(0, rgba(0, 0, 0, 1)),
-    color-stop(0.35, rgba(0, 0, 0, 1)),
-    color-stop(0.5, rgba(0, 0, 0, 1)),
-    color-stop(0.65, rgba(0, 0, 0, 0)),
-    color-stop(1, rgba(0, 0, 0, 0))
-  );
+.picture-background {
+  background-color: #000;
+  /* background-image: linear-gradient(to right, #000 40%, transparent 58%),
+    url(https://i.pinimg.com/564x/09/72/73/097273a55023a945e3b3ac8425b84e48.jpg); */
+  background-position: right top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }

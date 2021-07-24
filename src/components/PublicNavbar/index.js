@@ -17,13 +17,22 @@ const PublicNavBar = () => {
               <Nav.Link href="#link">TV</Nav.Link>
               <NavDropdown title="Catagories" id="basic-nav-dropdown">
                 <NavDropdown.Item></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Trending</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Popular</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/trending">
+                  Trending
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/nowplaying">
+                  Popular
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/nowplaying">
+                  NowPlaying
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/toprated">
                   Top Rated
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Genres</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/nowplaying">
+                  Genres
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

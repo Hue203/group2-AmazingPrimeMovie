@@ -7,13 +7,14 @@ import "./style.css";
 
 const NowPlaying = ({ data, imgLink }) => {
   const settings = {
-    autoplay: true,
-    arrows: false,
     dots: true,
-    speed: 3000,
-    fade: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
   return (
     <>
@@ -23,6 +24,8 @@ const NowPlaying = ({ data, imgLink }) => {
             data.map((movie) => (
               <Link to={`/movie/${movie.id}`}>
                 <img
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
                   className="nowPlaying-img"
                   src={`${imgLink}${
                     movie?.poster_path == null

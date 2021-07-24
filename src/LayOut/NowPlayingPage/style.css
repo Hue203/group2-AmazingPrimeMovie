@@ -1,0 +1,158 @@
+.text-movie {
+  font-size: 40px;
+  text-shadow: 8px 8px green;
+}
+.movie-container {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #22254b;
+  color: white;
+}
+.movie {
+  margin: 1rem;
+  background-color: #373b69;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+.movie img {
+  width: 250px;
+}
+.movie-info {
+  display: flex;
+  width: 150px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-info p {
+  margin: 0;
+}
+.movie-overview {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: greenyellow;
+  color: #373b69;
+  position: absolute;
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+.movie:hover .movie-overview {
+  transform: translateY(0%);
+}
+.container-moviedetail {
+  display: flex;
+}
+.detailmovie-right-side {
+  margin-top: 70px;
+}
+.detailmovie-right-side {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.release {
+  margin-right: 50px;
+}
+.overview-detail {
+  margin-top: 45px;
+}
+.container-moviedetail {
+  margin-top: 30px;
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  background-color: #373b69;
+  color: white;
+}
+.img-detail {
+  width: 600px;
+  height: 600px;
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.search {
+  margin-top: 20px;
+  background-color: #22254b;
+  position: relative;
+}
+.btn {
+  margin-left: 250px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.score-img {
+  width: 40px;
+  height: 40px;
+}
+.rating {
+  margin: 20px;
+  color: green;
+  font-size: 20px;
+}
+.detail-title {
+  margin-top: 30px;
+}
+.load-more-section {
+  background-color: #22254b;
+}
+.overview-card {
+  border: 3px solid grey;
+  width: 20%;
+  border-radius: 10%;
+  text-align: center;
+  background-color: #373b69;
+}
+.review-title {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  text-shadow: 3px 3px green;
+}
+.review-card {
+  border: 1px solid grey;
+}
+.comments-contents {
+  padding-top: 30px;
+}
+.mainreview-contents {
+  padding-top: 30px;
+}
+.style-box-comments {
+  border: 1px solid grey;
+  margin-top: 20px;
+  background-color: wheat;
+  border-radius: 3px;
+  padding: 15px;
+}
+.top-box-comments {
+  padding: 15px;
+}
+.img-detail-small {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}

@@ -49,3 +49,9 @@
   max-height: 504px;
   height: 100%;
 }
+
+/* us */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}

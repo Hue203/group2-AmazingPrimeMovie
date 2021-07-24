@@ -1,0 +1,12 @@
+.sliderNowPlaying {
+}
+.nowPlaying-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  box-shadow: 2px;
+}

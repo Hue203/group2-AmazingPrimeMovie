@@ -12,33 +12,45 @@ import "./Style.css";
 
 const DetaiPage = () => {
   return (
-    <div className="all box1 ">
-      <div className="_2Ke7Sf test">
-        <div className="_3nvsfu test">
-          <div className="_3KHiTg _1472H- av-dp-container _1WCtm8 Gzzp8d">
-            {/* Haha
-            <div className=".avu-retail-page .fVWsBr.fVWsBr.fVWsBr test">
-              haha
-              <div className="_3KHiTg _2Ke7Sf test"> */}
-            <div className="fVWsBr Coi_ha av-hero-background test">
-              <div className="">
-                <img
-                  id="atf-full"
-                  class="Zk8aEm _2ZnCkI"
-                  src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX1080_.jpg"
-                  srcset="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX360_.jpg 360w, https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX540_.jpg 540w, https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX720_.jpg 720w, https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX1080_.jpg 1080w, https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX1440_.jpg 1440w, https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX1620_.jpg 1620w, https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-89Z24-Full-Image_GalleryBackground-en-US-1610386596939._SX2160_.jpg 2160w"
-                  sizes="(max-width: 28em) 360px, (max-width: 55em) 720px, (min-width: 55em) 1080px, 1080px"
-                  alt=""
-                  onload="document.body.classList.add('atfimgloaded')"
-                />
-                {/* </div>
-                </div> */}
+    <>
+      <Card className="_2Ke7Sf ">
+        <Card.Body className=" box1">
+          <div className="flex">
+            <div>
+              <Card.Title>Special title treatment</Card.Title>
+              <div className="container flex test">
+                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">Go somewhere</Button>
               </div>
+              <Card.Text>
+                Rentals include 30 days to start watching this video and 48
+                hours to finish once started.
+              </Card.Text>
+              <Card.Text>
+                When a mysterious 10-year-old boy turns up who claims to live in
+                the woods with a giant green dragon, a forest ranger and an
+                11-year-old girl set out to learn the truth about him. Directors
+                David Lowery
+              </Card.Text>
+              <Card.Text>Director :</Card.Text>
+              <Card.Text>Director :</Card.Text>
+              <Card.Text>Director :</Card.Text>
             </div>
+
+            <Card.Img
+              variant="top"
+              src="https://i.pinimg.com/564x/0d/a5/bd/0da5bd82b3071a3c92fe6bd70cd53ec4.jpg"
+              style={{ width: "30vw" }}
+            />
           </div>
-        </div>
-      </div>
-    </div>
+          <Card.Text>
+            Rentals include 30 days to start watching this video and 48 hours to
+            finish once started.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </>
   );
 };
 

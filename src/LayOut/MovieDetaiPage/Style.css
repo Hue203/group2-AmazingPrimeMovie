@@ -19,6 +19,7 @@
   margin: 0;
   cursor: default;
   min-height: 100%;
+
   /* background-color: #0f171e; */
 }
 
@@ -41,7 +42,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
   line-height: 24px;
-  background-color: #0f171e;
+  background-color: #747677;
   color: #fff;
   box-sizing: border-box;
 }
@@ -75,16 +76,31 @@
 .circle {
   border-radius: 50% !important;
   height: 40px;
+  justify-self: center;
+}
+.center-circle {
+  display: flex;
+  justify-content: center;
 }
 ._3Lykuc {
   background: linear-gradient(90deg, #0f171e 10%, rgba(15, 23, 30, 0));
+  background-size: contain;
 }
 .picture-background {
   background-color: #000;
-  /* background-image: linear-gradient(to right, #000 40%, transparent 58%),
+  /* background-image: linear-gradient(to right, #0f171e 40%, transparent 58%),
     url(https://i.pinimg.com/564x/09/72/73/097273a55023a945e3b3ac8425b84e48.jpg); */
   background-position: right top;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  background-size: contain;
+}
+.page-title {
+  margin-bottom: 12px !important;
+  font-size: 35px !important;
+  line-height: 36px !important;
+}
+.white {
+  background-color: white;
+  color: #fff;
 }

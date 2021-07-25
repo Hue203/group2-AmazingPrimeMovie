@@ -1,17 +1,17 @@
-.carousel {
-    height: 60vh!important;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Hammersmith One', sans-serif;
 }
-.carousel-inner,.carousel-item, .trendingMovieImg  {
-    height:inherit;
+
+
+/* list title */
+.d-flex {
+  align-items: center;
 }
-.carousel-caption {
-    text-shadow: 1px 1px dimgray
+.d-flex h5 {
+  margin:0 !important;
+  padding-right: 16px;
 }
-.carousel-item {
-    background-color: black ;
-}
-.trendingMovieImg {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0)!important;
-}
+

@@ -1,14 +1,15 @@
-import React from 'react' 
-import Trending from '../../components/Trending'
-import { useState } from 'react'
-import { useEffect } from 'react'
+import React from 'react'
+import { useState } from "react";
+import { useEffect } from "react";
+import Trending from '../../components/Trending';
+
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
 const imgLink = process.env.REACT_APP_IMAGE;
 
-const TrendingPage = () => {
+const TrendingList = () => {
     const [trendingMovies, setTrendingMovies] = useState([])
-    useEffect(()=>{
+  useEffect(()=>{
         const getData = async () => {
             try {
              let res = await fetch(`${baseUrl}/trending/all/week?api_key=${API_KEY}`)
@@ -20,13 +21,14 @@ const TrendingPage = () => {
          }
      }
      getData()
-    },[])
+  },[])
+
     return (
-        
         <div>
-           <Trending trendingMovies={trendingMovies} imgLink={imgLink} />
+            <Trending trendingMovies={trendingMovies} imgLink={imgLink} />
+            
         </div>
     )
 }
 
-export default TrendingPage
+export default TrendingList

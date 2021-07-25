@@ -2,10 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import NowPlaying from "../../components/NowPlaying";
+import TrendingList from "../TrendingList";
 
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
 const imgLink = process.env.REACT_APP_IMAGE;
+
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
 
@@ -27,6 +29,9 @@ const HomePage = () => {
   return (
     <>
       <NowPlaying data={movies} imgLink={imgLink} />
+      <br></br>
+      <TrendingList />
+      <br></br>
     </>
   );
 };

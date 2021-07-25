@@ -101,7 +101,6 @@ const DetaiPage1 = ({ movies }) => {
                 <a href="/dv/tou/ref=atv_dp_terms">Terms</a>. Sold by Amazon.com
                 Services LLC.
               </span>
-
               <div>
                 <Row>
                   <Col xs={12} md={4} className="">

@@ -9,7 +9,6 @@ import { css } from "@emotion/react";
 import "./style.css";
 import Trending from "../../components/Trending";
 import NowPlaying from "../../components/NowPlaying";
-import SearchForm from "../../components/\bSearchTest";
 
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;

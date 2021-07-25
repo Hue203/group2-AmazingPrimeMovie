@@ -28,13 +28,30 @@ const DetaiPage = () => {
     getMovie1();
   }, [singleMovieData.id]);
 
+  const [relatedMovieData, setRelatedMovieData] = useState([]);
+  useEffect(() => {
+    const getRelatedMovie = async () => {
+      try {
+        let url = `https://api.themoviedb.org/3/movie/${id}/similar?api_key=7b86993b7f0770e398a87a2da0766218&language=en-US`;
+        let res = await fetch(url);
+        let data = await res.json();
+        setRelatedMovieData(data);
+        console.log("Relatedmovie", relatedMovieData);
+        // return singleMovieData;
+      } catch (error) {
+        console.log("erro", error.msg);
+      }
+    };
+    getRelatedMovie();
+  }, [singleMovieData.id]);
+
   return (
     <>
       <DetaiPage1 movies={singleMovieData} />
       <br></br>
       <br></br>
 
-      <Relate className="margin" />
+      <Relate relatedMovie={relatedMovieData} />
     </>
   );
 };

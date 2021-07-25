@@ -50,7 +50,7 @@ const Relate = ({ relatedMovie }) => {
         <div>
           <Card
             className="hover"
-            style={{ height: "35rem", width: "30rem" }}
+            style={{ height: "35rem", width: "20rem" }}
             bg="dark "
             text="light"
           >
@@ -65,7 +65,7 @@ const Relate = ({ relatedMovie }) => {
         <div>
           <Card
             className="hover"
-            style={{ height: "35rem", width: "30rem" }}
+            style={{ height: "35rem", width: "20rem" }}
             bg="dark "
             text="light"
           >
@@ -79,7 +79,7 @@ const Relate = ({ relatedMovie }) => {
         <div>
           <Card
             className="hover"
-            style={{ height: "35rem", width: "30rem" }}
+            style={{ height: "35rem", width: "20rem" }}
             bg="dark "
             text="light"
           >
@@ -93,7 +93,7 @@ const Relate = ({ relatedMovie }) => {
         <div>
           <Card
             className="hover"
-            style={{ height: "35rem", width: "30rem" }}
+            style={{ height: "35rem", width: "20rem" }}
             bg="dark "
             text="light"
           >

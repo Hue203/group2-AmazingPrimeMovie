@@ -10,8 +10,8 @@ const imgLink = process.env.REACT_APP_IMAGE;
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
-  const [page, setPage] = useState(1);
-  let url = `${baseUrl}/movie/now_playing?api_key=${API_KEY}&language=en-US&page=${page}S`;
+
+  let url = `${baseUrl}/movie/now_playing?api_key=${API_KEY}&language=en-US`;
 
   
   useEffect(() => {
@@ -26,10 +26,7 @@ const HomePage = () => {
       }
     };
     getMovies();
-  }, [page]);
-
-
-  
+  },[]);
   return (
     <>
       <NowPlaying data={movies} imgLink={imgLink} />

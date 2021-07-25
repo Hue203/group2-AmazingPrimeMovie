@@ -1,0 +1,32 @@
+.footer {
+  color: grey;
+  text-align: center;
+  padding: 100px 15px 50px;
+  background-color: #100a0a;
+  max-height: 350px;
+}
+
+.footer img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+.footer li {
+  font-size: 0;
+  padding: 0 15px;
+}
+.footer svg {
+  height: 30px;
+}
+.footer__copyrigh {
+  padding-top: 25px;
+  position: relative;
+}

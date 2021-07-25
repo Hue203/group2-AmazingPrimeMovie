@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -16,7 +17,6 @@ function App() {
   return (
     <>
       <Router>
-        <PublicNavBar />
         <Switch>
           <Route path="/" exact component={HomePage} />
 

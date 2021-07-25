@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -12,8 +13,8 @@ import TrendingPage from "./LayOut/TrendingPage";
 import TopRatedPage from "./LayOut/TopRatedPage";
 import NowPlayingPage from "./LayOut/NowPlayingPage";
 
-import { useState } from "react";
 import SearchForm from "./components/SearchTest";
+import SearchBox from "./components/SearchBox";
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
 const imgLink = process.env.REACT_APP_IMAGE;
@@ -54,6 +55,8 @@ function App() {
   const handleOnChange = (e) => {
     setSearchTerm(e.target.value);
   };
+
+  const [query, setQuery] = useState("");
   return (
     <>
       <Router>
@@ -75,6 +78,7 @@ function App() {
 
         <FooterBar />
       </Router>
+      <SearchBox setQuery={setQuery} />
     </>
   );
 }

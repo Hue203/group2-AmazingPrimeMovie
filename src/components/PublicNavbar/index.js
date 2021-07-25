@@ -30,7 +30,7 @@ const PublicNavBar = () => {
                 <NavDropdown.Item as={Link} to="/nowplaying">
                   NowPlaying
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/toprated">
+                <NavDropdown.Item as={Link} to="/nowplaying">
                   Top Rated
                 </NavDropdown.Item>
                 <NavDropdown.Divider />

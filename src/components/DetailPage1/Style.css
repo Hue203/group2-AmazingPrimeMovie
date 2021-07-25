@@ -5,6 +5,7 @@
   box-sizing: border-box;
   line-height: 24px;
   display: block;
+  background-color: black;
 }
 .test {
   border: 2px solid red;
@@ -99,8 +100,20 @@
   margin-bottom: 12px !important;
   font-size: 35px !important;
   line-height: 36px !important;
+  font-weight: bold;
 }
 .white {
   background-color: white;
   color: #fff;
+}
+.dark-color-border {
+  background-color: black;
+  border: 2px solid black;
+}
+.boder-box {
+  border: 7px #0f171e !important;
+}
+.term {
+  color: rgb(96, 95, 109) !important;
+  margin-top: 15px;
 }

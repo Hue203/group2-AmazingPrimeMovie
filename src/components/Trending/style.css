@@ -1,9 +1,18 @@
+<<<<<<< HEAD:src/components/TrendingList/style.css
+/* * {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Hammersmith One', sans-serif;
+} */
+=======
 .content {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Hammersmith One", sans-serif;
 }
+>>>>>>> b2b965beae82ef7b0723a97e318ac2f10de31bf7:src/components/Trending/style.css
 /* list title */
 .d-flex {
   align-items: center;

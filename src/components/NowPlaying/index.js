@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "slick-carousel/slick/slick.css" ;
-import "slick-carousel/slick/slick-theme.css" ;
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "./style.css";
@@ -8,12 +8,11 @@ import "./style.css";
 const NowPlaying = ({ data, imgLink }) => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
     dots: true,
   };
   return (

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  Col,
-  Container,
-  ListGroup,
-  ListGroupItem,
-  Row,
-} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import "./Style.css";
 
 const Relate = () => {

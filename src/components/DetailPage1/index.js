@@ -1,42 +1,41 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  Col,
-  Container,
-  ListGroup,
-  ListGroupItem,
-  Row,
-} from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import "./Style.css";
-// import Relate from "./DetailComp/Relate";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const DetaiPage = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+const DetaiPage1 = ({ movies }) => {
+  let genrerList, genresArray;
+  if (movies.genres) {
+    genresArray = movies.genres;
+    genrerList = genresArray.map((e) => e.name).join(",");
+    console.log("genresList", genrerList);
+  }
   return (
     <>
-      <Card>
+      <Card className="boder-box">
         <div
           className="_2Ke7Sf  picture-background _3Lykuc "
           style={{
             backgroundImage:
-              "linear-gradient(to right, #0f171e 50%, transparent 58%), linear-gradient(to top, #0f171e 20%, transparent 58%),url(https://www.filmmattersmagazine.com/wp-content/uploads/2017/10/Shabani-1.jpg)",
+              "linear-gradient(to right, #0f171e 50%, transparent 78%), linear-gradient(to top, #0f171e 20%, transparent 58%),url(https://www.filmmattersmagazine.com/wp-content/uploads/2017/10/Shabani-1.jpg)",
           }}
         >
           <Card.Body className=" box1">
             <Col xs={12} md={8}>
               <div className="flex">
                 <div>
-                  <Card.Text className="test page-title">
-                    Special title treatment
+                  <Card.Text className=" page-title">
+                    {movies.original_title}
                   </Card.Text>
                   <div>
-                    <div className="test">stars, ranking</div>
+                    <div className="">Vote average: {movies.vote_average}</div>
                     <Row>
-                      <Col xs={8} md={8} className="test">
-                        <Row className="test">
-                          <Col xs={12} md={2} className="test">
+                      <Col xs={8} md={8} className="">
+                        <Row className="">
+                          <Col xs={12} md={2} className="">
                             <Button
                               variant="secondary"
                               className="button-color"
@@ -44,7 +43,7 @@ const DetaiPage = () => {
                               Rent HD 3$
                             </Button>
                           </Col>
-                          <Col xs={12} md={2} className="test">
+                          <Col xs={12} md={2} className="">
                             <Button
                               variant="secondary "
                               className="button-color"
@@ -52,7 +51,7 @@ const DetaiPage = () => {
                               Rent HD 3$
                             </Button>
                           </Col>
-                          <Col xs={12} md={4} className="test">
+                          <Col xs={12} md={4} className="">
                             <Button
                               variant="secondary "
                               className="button-color"
@@ -60,13 +59,15 @@ const DetaiPage = () => {
                               More purchase options
                             </Button>
                           </Col>
-                          <Col xs={12} md={1} className="test center-circle">
+                          <Col xs={12} md={1} className=" center-circle">
                             <Button
                               variant="secondary "
                               className="button-color circle"
-                            ></Button>
+                            >
+                              |>
+                            </Button>
                           </Col>
-                          <Col xs={12} md={1} className="test center-circle">
+                          <Col xs={12} md={1} className=" center-circle">
                             <Button
                               variant="secondary "
                               className="button-color circle"
@@ -82,44 +83,33 @@ const DetaiPage = () => {
                     Rentals include 30 days to start watching this video and 48
                     hours to finish once started.
                   </Card.Text>
-                  <Card.Text className="test">
-                    When a mysterious 10-year-old boy turns up who claims to
-                    live in the woods with a giant green dragon, a forest ranger
-                    and an 11-year-old girl set out to learn the truth about
-                    him. Directors David Lowery
-                  </Card.Text>
-                  <div className="test">
-                    <Card.Text style={{ color: "#6d7f8b" }}>
-                      Director :
-                    </Card.Text>
-                    <Card.Text style={{ color: "#6d7f8b" }}>
-                      Director :
-                    </Card.Text>
-                    <Card.Text style={{ color: "#6d7f8b" }}>
-                      Director :
-                    </Card.Text>
+                  <Card.Text className="">{movies.overview}</Card.Text>
+                  <div className="">
+                    <div style={{ color: "#6d7f8b" }}>Director :</div>
+                    <div style={{ color: "#6d7f8b" }}>
+                      Language : {movies.original_language}
+                    </div>
+                    <div style={{ color: "#6d7f8b" }}>Genres :{genrerList}</div>
                   </div>
                 </div>
               </div>
             </Col>
 
             <div className="flex">
-              <Card.Text className="test">
-                Rentals include 30 days to start watching this video and 48
-                hours to finish once started.
-              </Card.Text>
+              <span class="term">
+                By ordering or viewing, you agree to our
+                <a href="/dv/tou/ref=atv_dp_terms">Terms</a>. Sold by Amazon.com
+                Services LLC.
+              </span>
               <div>
                 <Row>
-                  <Col xs={12} md={4} className="test">
-                    <FontAwesomeIcon
-                      icon="fa-solid fa-share-nodes"
-                      className="white"
-                    />
+                  <Col xs={12} md={4} className="">
+                    <Button variant="secondary ">Feedback</Button>
                   </Col>
-                  <Col xs={12} md={4} className="test">
-                    {/* <FontAwesomeIcon icon="coffee" className="white" /> */}
+                  <Col xs={12} md={4} className="">
+                    <Button variant="secondary ">Feedback</Button>
                   </Col>
-                  <Col xs={12} md={4} className="test">
+                  <Col xs={12} md={4} className="">
                     <Button variant="secondary ">Feedback</Button>
                   </Col>
                 </Row>
@@ -128,9 +118,8 @@ const DetaiPage = () => {
           </Card.Body>
         </div>
       </Card>
-      {/* <Relate /> */}
     </>
   );
 };
 
-export default DetaiPage;
+export default DetaiPage1;

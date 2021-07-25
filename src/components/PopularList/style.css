@@ -1,48 +1,46 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Hammersmith One', sans-serif;
-  }
-  /* list title */
-  .d-flex {
-    align-items: center;
-  }
-  .d-flex h5 {
-    margin:0 !important;
-    color:white;
-    padding-right: 16px;
-  }
-  .content {
-    
-    margin: 0 4vw;
-    
-  }
-  .slick-slider {
-    box-sizing: content-box;
-    max-height: 600px;
-    max-width: 1024;
-   
-  }
-  .slick-list  {
-    height: 90%;
-    
-  }
-  .slick-track, .slick-slide, .slick-slide div {
-    height: 100%
-  }
-  
-  .slick-track,.slick-slide, .slick-slide div {
-    overflow: visible;
-  }
-  .movieImg {
-    transition: 0.5s;
-    object-fit: contain;
-    padding: 32px
-  }
-  
-  .movieImg:hover {
-      transform:scale(1.1);
-  }
-  
-  
+.content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hammersmith One", sans-serif;
+}
+/* list title */
+.d-flex {
+  align-items: center;
+}
+.d-flex h5 {
+  margin: 0 !important;
+  color: white;
+  padding-right: 16px;
+}
+.content {
+  margin: 0 4vw;
+}
+.slick-slider {
+  box-sizing: content-box;
+  max-height: 600px;
+  max-width: 1024;
+}
+.slick-list {
+  height: 90%;
+}
+.slick-track,
+.slick-slide,
+.slick-slide div {
+  height: 100%;
+}
+
+.slick-track,
+.slick-slide,
+.slick-slide div {
+  overflow: visible;
+}
+.movieImg {
+  transition: 0.5s;
+  object-fit: contain;
+  padding: 32px;
+}
+
+.movieImg:hover {
+  transform: scale(1.1);
+}

@@ -24,7 +24,7 @@ const PublicNavBar = () => {
                 <NavDropdown.Item as={Link} to="/trending">
                   Trending
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/nowplaying">
+                <NavDropdown.Item as={Link} to="/popular">
                   Popular
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/nowplaying">

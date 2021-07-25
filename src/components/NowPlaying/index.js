@@ -8,12 +8,11 @@ import "./style.css";
 const NowPlaying = ({ data, imgLink }) => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
     dots: true,
   };
   return (

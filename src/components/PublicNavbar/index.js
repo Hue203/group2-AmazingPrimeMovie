@@ -1,12 +1,16 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo2.png";
+import "./style.css";
 const PublicNavBar = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" className="navbar">
         <Container>
-          <Navbar.Brand href="#home">Amazing Prime </Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            <img src={logo} alt="AmazingPrime" className="img-logo" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -17,15 +21,22 @@ const PublicNavBar = () => {
               <Nav.Link href="#link">TV</Nav.Link>
               <NavDropdown title="Catagories" id="basic-nav-dropdown">
                 <NavDropdown.Item></NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Trending</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Popular</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item as={Link} to="/trending">
+                  Trending
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/popular">
+                  Popular
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/nowplaying">
+                  NowPlaying
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/toprated">
                   Top Rated
                 </NavDropdown.Item>
-                <NavDropdown.Divider />                
-              </NavDropdown>
-              <NavDropdown title="Genres" id="basic-nav-dropdown">
-                
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={Link} to="/nowplaying">
+                  Genres
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

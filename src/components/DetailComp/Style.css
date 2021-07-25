@@ -1,0 +1,12 @@
+.bg-color {
+  background: linear-gradient(90deg, #0f171e 10%, rgba(15, 23, 30, 0));
+  color: #ffff !important;
+  font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  font-weight: bold;
+}
+.row-height {
+  height: 10vh;
+}

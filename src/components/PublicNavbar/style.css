@@ -1,0 +1,16 @@
+.img-logo {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50% 20% / 10% 40%;
+  box-shadow: 8px grey;
+  text-align: left;
+}
+.navbar {
+  font-weight: 700;
+  color: grey;
+  font-size: 24px;
+  background-color: #1b2530;
+  flex-shrink: 1;
+  width: 100%;
+  display: inline-block;
+}

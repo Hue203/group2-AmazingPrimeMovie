@@ -13,22 +13,10 @@ import TrendingPage from "./LayOut/TrendingPage";
 import TopRatedPage from "./LayOut/TopRatedPage";
 import NowPlayingPage from "./LayOut/NowPlayingPage";
 
-import SearchForm from "./components/SearchTest";
-import SearchBox from "./components/SearchBox";
-const baseUrl = process.env.REACT_APP_URL;
-const API_KEY = process.env.REACT_APP_API_KEY;
-const imgLink = process.env.REACT_APP_IMAGE;
 function App() {
-  const [query, setQuery] = useState("");
   return (
     <>
       <Router>
-        <PublicNavBar />
-        {/* <SearchForm
-          handleOnChange={handleOnChange}
-          handleOnSubmit={handleOnSubmit}
-          searchTerm={searchTerm}
-        /> */}
         <Switch>
           <Route path="/" exact component={HomePage} />
 

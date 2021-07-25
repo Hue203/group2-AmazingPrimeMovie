@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <Router>
+        <PublicNavBar />
         <Switch>
           <Route path="/" exact component={HomePage} />
 

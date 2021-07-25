@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import HomePage from "./LayOut/HomePage";
-import DetaiPage from "./LayOut/DetaiPage";
+import DetaiPage from "./LayOut/MovieDetaiPage";
 import PublicNavBar from "./components/PublicNavbar";
 import FooterBar from "./components/FooterBar";
 import PopularPage from "./LayOut/PopularPage";

@@ -1,0 +1,7 @@
+.bg-color {
+  background: linear-gradient(90deg, #0f171e 10%, rgba(15, 23, 30, 0));
+  color: #ffff !important;
+}
+.row-height {
+  height: 10vh;
+}

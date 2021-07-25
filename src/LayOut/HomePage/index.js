@@ -14,7 +14,6 @@ const HomePage = () => {
 
   let url = `${baseUrl}/movie/now_playing?api_key=${API_KEY}&language=en-US`;
 
-  
   useEffect(() => {
     const getMovies = async () => {
       try {
@@ -27,7 +26,7 @@ const HomePage = () => {
       }
     };
     getMovies();
-  },[]);
+  }, []);
   return (
     <>
       <NowPlaying data={movies} imgLink={imgLink} />
@@ -37,8 +36,6 @@ const HomePage = () => {
       <PopularList />
       <br></br>
     </>
-      
-
   );
 };
 

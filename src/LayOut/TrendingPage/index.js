@@ -9,6 +9,7 @@ import { css } from "@emotion/react";
 import "./style.css";
 import Trending from "../../components/Trending";
 import NowPlaying from "../../components/NowPlaying";
+import SearchForm from "../../components/\bSearchTest";
 
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -21,37 +22,58 @@ const override = css`
 `;
 const TrendingPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [listMovie, setListMovie] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [totalPage, setTotalPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [appError, setAppError] = useState("");
   const [trendingMovies, setTrendingMovies] = useState([]);
+
+  const getData = async () => {
+    try {
+      let res = await fetch(
+        `${baseUrl}/trending/all/week?api_key=${API_KEY}&language=en-US&page=${currentPage}`
+      );
+      let data = await res.json();
+      console.log(data);
+      setTrendingMovies(data.results);
+      setAppError("");
+      setTotalPage(data.total_pages);
+    } catch (error) {
+      console.log(error);
+      setAppError("erro", error.msg);
+    }
+  };
+
+  const handleOnSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      let url = `${baseUrl}/search/movie?api_key=${API_KEY}&query=${searchTerm}&page=${currentPage}`;
+      console.log("Searchurl", url);
+      let res = await fetch(url);
+      let data = await res.json();
+      console.log("Searchmovie", data);
+      setListMovie(data.results);
+      setAppError("");
+    } catch (error) {
+      console.log("erro", error.msg);
+      setAppError("erro", error.msg);
+    }
+  };
   useEffect(() => {
-    const getData = async () => {
-      try {
-        let res = await fetch(
-          `${baseUrl}/trending/all/week?api_key=${API_KEY}&language=en-US&page=${currentPage}`
-        );
-        let data = await res.json();
-        console.log(data);
-        setTrendingMovies(data.results);
-        setAppError("");
-        setTotalPage(data.total_pages);
-      } catch (error) {
-        console.log(error);
-        setAppError("erro", error.msg);
-      }
-    };
-    if (trendingMovies === "") {
-      // first time load the page
+    if (listMovie === "") {
       setLoading(true);
       return;
     }
     setLoading(true);
     getData();
     setLoading(false);
-  }, [currentPage, totalPage]);
+  }, [currentPage, searchTerm]);
 
+  const handleOnChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+  console.log("searchTerm", searchTerm);
   return (
     <>
       {appError ? (
@@ -73,6 +95,11 @@ const TrendingPage = () => {
           <div>
             <NowPlaying data={trendingMovies} imgLink={imgLink} />
           </div>
+          {/* <SearchForm
+            handleOnChange={handleOnChange}
+            handleOnSubmit={handleOnSubmit}
+            searchTerm={searchTerm}
+          /> */}
           <div>
             {totalPage > 1 ? (
               <PaginationBar

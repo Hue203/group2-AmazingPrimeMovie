@@ -1,8 +1,8 @@
-.search_box {
-  display: flex;
-  width: 30%;
-  float: right;
+.search {
+  margin-top: 20px;
+  background-color: #22254b;
+  position: relative;
 }
-.content {
-  justify-content: space-between;
+.btn {
+  margin-left: 250px;
 }

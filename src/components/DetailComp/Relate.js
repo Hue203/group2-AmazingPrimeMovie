@@ -8,10 +8,10 @@ const Relate = () => {
       <Row className="bg-color row-height ">
         <Col md={{ span: 4, offset: 5 }}>
           <Row>
-            <Col xs={3} md={3} className="test">
+            <Col xs={3} md={3} className="">
               Relate
             </Col>
-            <Col xs={3} md={3} className="test">
+            <Col xs={3} md={3} className="">
               Detail
             </Col>
           </Row>

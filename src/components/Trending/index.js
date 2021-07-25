@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+
 import "./style.css";
 import logo from "../../logo.png";
 
@@ -18,9 +18,7 @@ const Trending = ({ trendingMovies, imgLink }) => {
  
 
   return (
-    <>
-      
-      <Container>
+      <div className="content">
         <div className="d-flex">
           <img alt="prime" src={logo} height="28px" />
           <h5>Trending Now</h5>
@@ -28,24 +26,18 @@ const Trending = ({ trendingMovies, imgLink }) => {
         </div>
         <Slider {...settings}>
             {trendingMovies.map((movie) => (
-              <div className="singleMovie flex">
-                <div className="show">
                 <img
-                  className="trendingMovieImg"
+                  className="movieImg"
                   src={`${imgLink}${movie.poster_path}`}
                   alt={`${movie.title}`}
                 />
-                </div>
-                <div className="hide">
-                  <h6>{movie.title ? movie.title : movie.name}</h6>
-                </div>
-              </div>))}
+                
+              ))}
 
         </Slider>
         
           
-      </Container>
-    </>
+      </div>
   );
 };
 

@@ -51,7 +51,9 @@ const DetaiPage1 = ({ movies }) => {
                     {/* <MDBContainer>
                       <MDBRating feedback />
                     </MDBContainer> */}
+
                     <div className="">Vote average: {movies.vote_average}</div>
+                    <br></br>
                     <Row>
                       <Col xs={8} md={10} className="">
                         <Row className="">
@@ -79,7 +81,7 @@ const DetaiPage1 = ({ movies }) => {
                               More purchase options
                             </Button>
                           </Col>
-                          <Col xs={12} md={1} className=" center-circle">
+                          {/* <Col xs={12} md={1} className=" center-circle">
                             <Button
                               variant="secondary "
                               className="button-color circle"
@@ -94,7 +96,7 @@ const DetaiPage1 = ({ movies }) => {
                             >
                               +
                             </Button>
-                          </Col>
+                          </Col> */}
                         </Row>
                       </Col>
                     </Row>
@@ -128,12 +130,12 @@ const DetaiPage1 = ({ movies }) => {
               </div>
             </Col>
             <Row>
-              <Col xs={4} md={12} className="test">
+              <Col xs={12} md={12} className="">
                 <span class="term">
                   By ordering or viewing, you agree to our
                   <a href="/dv/tou/ref=atv_dp_terms">Terms</a>. Sold by
                   Amazon.com Services LLC.
-                </span>{" "}
+                </span>
               </Col>
             </Row>
             {/* <Row>

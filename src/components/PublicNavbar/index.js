@@ -22,8 +22,10 @@ const PublicNavBar = () => {
                 <NavDropdown.Item href="#action/3.3">
                   Top Rated
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Genres</NavDropdown.Item>
+                <NavDropdown.Divider />                
+              </NavDropdown>
+              <NavDropdown title="Genres" id="basic-nav-dropdown">
+                
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

@@ -1,21 +1,21 @@
 import React from 'react'
 import { useState } from "react";
 import { useEffect } from "react";
-import Trending from '../../components/TrendingList';
+import Popular   from '../../components/PopularList';
 
 const baseUrl = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
 const imgLink = process.env.REACT_APP_IMAGE;
 
-const TrendingList = () => {
-    const [trendingMovies, setTrendingMovies] = useState([])
+const PopularList = () => {
+    const [popularMovies, setpopularMovies] = useState([])
   useEffect(()=>{
         const getData = async () => {
             try {
-             let res = await fetch(`${baseUrl}/trending/all/week?api_key=${API_KEY}`)
+             let res = await fetch(`${baseUrl}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`)
              let data = await res.json() 
              console.log(data)
-             setTrendingMovies(data.results)
+             setpopularMovies(data.results)
          } catch (error) {
              console.log(error)
          }
@@ -25,10 +25,9 @@ const TrendingList = () => {
 
     return (
         <div>
-            <Trending trendingMovies={trendingMovies} imgLink={imgLink} />
-            
+            <Popular popularMovies={popularMovies} imgLink={imgLink} />
         </div>
     )
 }
 
-export default TrendingList
+export default PopularList

@@ -38,7 +38,7 @@
 .movieImg {
   transition: 0.5s;
   object-fit: contain;
-  padding: 20px
+  padding: 32px
 }
 
 .movieImg:hover {

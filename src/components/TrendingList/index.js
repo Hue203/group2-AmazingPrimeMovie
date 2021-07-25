@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import logo from "../../logo.png";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

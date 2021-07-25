@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -13,6 +14,8 @@ import TopRatedPage from "./LayOut/TopRatedPage";
 import NowPlayingPage from "./LayOut/NowPlayingPage";
 
 function App() {
+
+  const [query, setQuery] = useState("");
   return (
     <>
       <Router>
@@ -29,6 +32,7 @@ function App() {
 
         <FooterBar />
       </Router>
+       <SearchBox setQuery={setQuery} />
     </>
   );
 }

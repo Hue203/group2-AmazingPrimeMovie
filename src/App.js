@@ -12,9 +12,9 @@ import PopularPage from "./LayOut/PopularPage";
 import TrendingPage from "./LayOut/TrendingPage";
 import TopRatedPage from "./LayOut/TopRatedPage";
 import NowPlayingPage from "./LayOut/NowPlayingPage";
+import SearchBox from "./components/SearchBox";
 
 function App() {
-
   const [query, setQuery] = useState("");
   return (
     <>
@@ -32,7 +32,7 @@ function App() {
 
         <FooterBar />
       </Router>
-       <SearchBox setQuery={setQuery} />
+      <SearchBox setQuery={setQuery} />
     </>
   );
 }

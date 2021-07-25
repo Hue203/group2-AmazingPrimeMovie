@@ -35,7 +35,7 @@ const DetaiPage1 = ({ movies }) => {
           className="_2Ke7Sf  picture-background _3Lykuc "
           style={{
             backgroundImage:
-              "linear-gradient(to right, #0f171e 50%, transparent 78%), linear-gradient(to top, #0f171e 20%, transparent 58%),url(" +
+              "linear-gradient(to right, #0f171e 40%, transparent 68%), linear-gradient(to top, #0f171e 10%, transparent 48%),url(" +
               imageMovie +
               ")",
           }}
@@ -48,10 +48,6 @@ const DetaiPage1 = ({ movies }) => {
                     {movies.original_title}
                   </Card.Text>
                   <div>
-                    {/* <MDBContainer>
-                      <MDBRating feedback />
-                    </MDBContainer> */}
-
                     <div className="">Vote average: {movies.vote_average}</div>
                     <br></br>
                     <Row>
@@ -129,6 +125,7 @@ const DetaiPage1 = ({ movies }) => {
                 </div>
               </div>
             </Col>
+            <br></br>
             <Row>
               <Col xs={12} md={12} className="">
                 <span class="term">

@@ -14,7 +14,7 @@ import "./style.css";
 const PublicNavBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="navbar">
+      <Navbar expand="lg" className="navbar" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img src={logo} alt="AmazingPrime" className="img-logo" />

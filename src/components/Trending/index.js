@@ -1,12 +1,16 @@
 import React from "react";
 import "./style.css";
 import logo from "../../logo.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Trending = ({ trendingMovies, imgLink }) => {
+  // const history = useHistory();
+  // const getDetailPage = () => {
+  //   history.push(`/movie/${movie.id}`);
+  // };
   const settings = {
     dots: true,
     infinite: true,
@@ -28,6 +32,7 @@ const Trending = ({ trendingMovies, imgLink }) => {
             className="movieImg"
             src={`${imgLink}${movie.poster_path}`}
             alt={`${movie.title}`}
+            // onClick={getDetailPage}
           />
         ))}
       </Slider>

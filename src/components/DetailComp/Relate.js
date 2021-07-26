@@ -46,11 +46,11 @@ const Relate = ({ relatedMovie }) => {
           </Row>
         </Col>
       </Row>
-      <div className="flex">
-        <div>
+      <Row>
+        <Col xs={12} md={3} className="">
           <Card
             className="hover"
-            style={{ height: "27rem", width: "30rem" }}
+            style={{ height: "35rem" }}
             bg="dark "
             text="light"
           >
@@ -60,26 +60,11 @@ const Relate = ({ relatedMovie }) => {
               <Card.Text>{text1}</Card.Text>
             </Card.Body>
           </Card>
-        </div>
-
-        <div>
+        </Col>
+        <Col xs={12} md={3} className="">
           <Card
             className="hover"
-            style={{ height: "27rem", width: "30rem" }}
-            bg="dark "
-            text="light"
-          >
-            <Card.Img variant="top" src={relatedMoviePic4} />
-            <Card.Body>
-              <Card.Title>{title4}</Card.Title>
-              <Card.Text>{text4}</Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-        <div>
-          <Card
-            className="hover"
-            style={{ height: "27rem", width: "30rem" }}
+            style={{ height: "35rem" }}
             bg="dark "
             text="light"
           >
@@ -89,22 +74,36 @@ const Relate = ({ relatedMovie }) => {
               <Card.Text>{text2}</Card.Text>
             </Card.Body>
           </Card>
-        </div>
-        <div>
+        </Col>
+        <Col xs={12} md={3} className="">
           <Card
             className="hover"
-            style={{ height: "27rem", width: "30rem" }}
+            style={{ height: "35rem" }}
             bg="dark "
             text="light"
           >
-            <Card.Img variant="top" src={relatedMoviePic3} />
+            <Card.Img variant="top" src={relatedMoviePic4} />
             <Card.Body>
-              <Card.Title>{title3}</Card.Title>
-              <Card.Text>{text3}</Card.Text>
+              <Card.Title>{title4}</Card.Title>
+              <Card.Text>{text4}</Card.Text>
             </Card.Body>
           </Card>
-        </div>
-      </div>
+        </Col>
+        <Col xs={12} md={3} className="">
+          <Card
+            className="hover"
+            style={{ height: "35rem" }}
+            bg="dark "
+            text="light"
+          >
+            <Card.Img variant="top" src={relatedMoviePic1} />
+            <Card.Body>
+              <Card.Title>{title1}</Card.Title>
+              <Card.Text>{text1}</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </>
   );
 };

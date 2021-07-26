@@ -127,3 +127,8 @@
 .logoxs {
   height: 20px;
 }
+.movieOverview {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 560px;
+}

@@ -11,7 +11,7 @@
   height: 10vh;
 }
 .cardbg {
-  background-color: teal !important;
+  color: rgb(48, 58, 58) !important;
 }
 .flex {
   display: flex;

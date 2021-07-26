@@ -38,7 +38,7 @@ const Relate = ({ relatedMovie }) => {
         <Col md={{ span: 4, offset: 5 }}>
           <Row>
             <Col xs={3} md={3} className="">
-              Relate
+              Related
             </Col>
             <Col xs={3} md={3} className="">
               Detail
@@ -96,10 +96,10 @@ const Relate = ({ relatedMovie }) => {
             bg="dark "
             text="light"
           >
-            <Card.Img variant="top" src={relatedMoviePic1} />
+            <Card.Img variant="top" src={relatedMoviePic3} />
             <Card.Body>
-              <Card.Title>{title1}</Card.Title>
-              <Card.Text>{text1}</Card.Text>
+              <Card.Title>{title3}</Card.Title>
+              <Card.Text>{text3}</Card.Text>
             </Card.Body>
           </Card>
         </Col>

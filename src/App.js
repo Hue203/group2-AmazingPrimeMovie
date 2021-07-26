@@ -1,9 +1,8 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-
 import HomePage from "./LayOut/HomePage";
 import DetaiPage from "./LayOut/DetaiPage";
 import PublicNavBar from "./components/PublicNavbar";
@@ -17,9 +16,9 @@ function App() {
   return (
     <>
       <Router>
+        <PublicNavBar />
         <Switch>
           <Route path="/" exact component={HomePage} />
-
           <Route path="/movie/:id" exact component={DetaiPage} />
           <Route path="/popular" component={PopularPage} />
           <Route path="/trending" component={TrendingPage} />

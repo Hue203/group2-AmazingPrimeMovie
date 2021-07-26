@@ -1,8 +1,16 @@
-import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import logo from "../../images/logo2.png";
+import React, { useEffect, useState } from "react";
+import {
+  Container,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavDropdown,
+} from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
+
+import logo from "../../logo.png";
 import "./style.css";
+
 const PublicNavBar = () => {
   return (
     <>
@@ -30,7 +38,7 @@ const PublicNavBar = () => {
                 <NavDropdown.Item as={Link} to="/nowplaying">
                   NowPlaying
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/toprated">
+                <NavDropdown.Item as={Link} to="/nowplaying">
                   Top Rated
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
